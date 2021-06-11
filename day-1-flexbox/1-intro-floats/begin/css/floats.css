@@ -30,14 +30,50 @@ div img {
 	max-width: 225px; 
 }
 
+.bg-yellow {
+	background-color: #fffccc;
+}
+
+.bg-pink {
+	background-color: #f4cbff;
+}
+
+.bg-blue {
+	background-color:  #cbfcfd;
+}
+
+.bg-purple {
+	background-color: #ccccfd;
+}
+
 /* grid system -- mobile first! */
+[class*='col-'] {
+	margin:  2% 4%;
+	width: 92%;
+	float: left;
+}
 
-
+.row::after {
+    content:"";
+    display: block;
+    clear:both;
+} 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
-
+	.col-md-6 {
+		width: 42%;
+	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.col-xl-4 {
+		width: 17%;
+	}
 
+	.col-xl-8 {
+		width: 64%;
+	}
 }
+
+
+
